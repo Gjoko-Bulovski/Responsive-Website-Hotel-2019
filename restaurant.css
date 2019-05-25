@@ -1,0 +1,192 @@
+/** img-header-restaurant **/
+.img-header-restaurant {
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url("https://source.unsplash.com/klXhDG8Roj4/1920");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-header-restaurant_content {
+    text-align: center;
+}
+.img-header-restaurant_content h1 {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.img-header-restaurant_content a {
+    text-decoration: none;
+    background-color: var(--primary);
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: var(--b-w);
+    font-weight: 600;
+    position: relative;
+}
+.img-header-restaurant_content a::before {
+    content: '';
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+    background: var(--b-w);
+    color: var(--b-w);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transform-origin: left;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 500ms;
+}
+.img-header-restaurant_content a:hover::before {
+     transform: scale(1,1);
+}
+.img-header-restaurant_content a span {
+     transition: all ease-in-out 1s;
+}
+.img-header-restaurant_content a:hover span {
+    position: relative;
+    color: var(--w-b);
+}
+
+/** section restaurant **/
+#restaurant {
+    width: 1920px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+#restaurant h1 {
+    color: var(--primary);
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#restaurant p {
+    color: var(--b-w);
+    text-align: center;
+}
+.restaurant-container {
+    width: 1280px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-gap: 20px;
+}
+.restaurant-content {
+    padding: 20px;
+}
+.restaurant-content img {
+    display: block;
+    width: 100%;
+    border-radius: 24px;
+}
+.restaurant-content_inner {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+}
+.restaurant-content_inner h2 {
+    color: var(--primary);
+}
+.restaurant-content_inner p {
+    color: var(--b-w);
+}
+.restaurant-content_inner ul li {
+    color: var(--b-w);
+    font-weight: 600;
+}
+.restaurant-content_inner ul li span {
+    color: var(--b-w);
+    font-weight: 400;
+}
+
+/** div img-fixed **/
+.img-fixed {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url("https://source.unsplash.com/klXhDG8Roj4/1920");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-backgound-size: cover;
+    -o-backgound-size: cover;
+    -moz-backgound-size: cover;
+    -ms-backgound-size: cover;
+    width: 1920px;
+    height: 400px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.img-fixed-center {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 20px;
+}
+.h1-call{
+    text-align: center;
+    color: #fff;
+}
+.img-fixed-contact-us  {
+    text-decoration: none;
+    background-color: var(--primary);
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: var(--b-w);
+    font-weight: 600;
+    position: relative;
+}
+.img-fixed-contact-us::before {
+    content: '';
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+    background: var(--b-w);
+    color: var(--b-w);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transform-origin: left;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 500ms;
+}
+.img-fixed-contact-us:hover::before {
+     transform: scale(1,1);
+}
+.img-fixed-contact-us span {
+     transition: all ease-in-out 1s;
+}
+.img-fixed-contact-us:hover span {
+    position: relative;
+    color: var(--w-b);
+}
+
+
+@media screen and (max-width: 1920px) {
+    #restaurant {
+        width: 100%;
+    }
+    .img-fixed {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .restaurant-container {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .restaurant-container {
+        grid-template-columns: 1fr;
+    }
+}

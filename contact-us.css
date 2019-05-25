@@ -1,0 +1,207 @@
+/** img-header-restaurant **/
+.img-header-contact-us {
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url("https://source.unsplash.com/ZAVHbpOn4Jk/1920");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-header-contact-us_content {
+    text-align: center;
+}
+.img-header-contact-us_content h1 {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.img-header-contact-us_content a {
+    text-decoration: none;
+    background-color: var(--primary);
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: var(--b-w);
+    font-weight: 600;
+    position: relative;
+}
+.img-header-contact-us_content a::before {
+    content: '';
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+    background: var(--b-w);
+    color: var(--b-w);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transform-origin: left;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 500ms;
+}
+.img-header-contact-us_content a:hover::before {
+     transform: scale(1,1);
+}
+.img-header-contact-us_content a span {
+     transition: all ease-in-out 1s;
+}
+.img-header-contact-us_content a:hover span {
+    position: relative;
+    color: var(--w-b);
+}
+
+/** contact-us **/
+#contact-us {
+    width: 1920px;
+}
+.div-container {
+    width: 1280px;
+    padding:  40px 20px;
+    text-align: center;
+    margin: auto;
+}
+.contact-us-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.div-container h1 {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 36px;
+}
+.input-container {
+    display: grid;
+    justify-items: center;
+    padding: 20px;  
+} 
+.input-inside {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+}
+.input {
+    display: block;
+    padding: 15px 10px;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 2px solid var(--b-w);
+    width: 100%;
+    font-size: 1rem;
+    box-sizing: border-box;
+    color: var(--b-w);
+    transition: all ease-in-out 0.5s;
+}
+.input:focus {
+    border-bottom: 2px solid var(--primary);
+}
+.input-label {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    opacity:0;
+    padding: 0 2px;
+    font-size: 1rem;
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+.input:valid + .input-label {
+    opacity: 1;
+    top:-8px;
+}
+.input:focus + .input-label {
+    color: var(--primary);
+}
+#btn-contact-form {
+    text-decoration: none;
+    background-color: var(--primary);
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: var(--b-w);
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+#btn-contact-form::before {
+    content: '';
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+    background: var(--b-w);
+    color: var(--b-w);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transform-origin: left;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 500ms;
+}
+#btn-contact-form:hover::before {
+    transform: scale(1,1);
+} 
+#btn-contact-form span {
+    transition: all ease-in-out 1s;
+}
+#btn-contact-form:hover span {
+    position: relative;
+    color: var(--w-b);
+}
+.contact-information {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    color: var(--b-w);
+}
+.contact-information-inner {
+    display: grid;
+    grid-gap: 20px;
+}
+.contact-information-inner a {
+    text-decoration: none;
+    color: var(--b-w);
+    font-weight: 600;
+    transition: all ease-in-out 0.5s;
+}
+.contact-information-inner a:hover {
+    color: var(--primary);
+} 
+.google-maps {
+    width: 1920px;
+    height: 450px;
+}
+
+@media screen and (max-width: 1920px) {
+    #contact-us {
+        width: 100%;
+    }
+    .google-maps {
+        width: 100%;
+    }
+    .google-maps iframe {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .div-container {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .contact-us-container {
+        grid-template-columns: 1fr;
+    }
+}

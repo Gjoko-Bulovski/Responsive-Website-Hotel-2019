@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+   <main id="main">
+       
+       <!-- light and dark mode -->
+       <input type="checkbox" id="toggleMode">
+       <label for="toggleMode" class="toggleDark" title="Dark"><i class="fas fa-adjust fa-2x"></i></label>
+       <label for="toggleMode" class="toggleLight" title="Light"><i class="fas fa-adjust fa-2x"></i></label>
+       
+       <!-- section all -->
+       <section id="section-all">
+          
+           <!-- img-header-restaurant -->
+           <div class="img-header-restaurant">
+              <div class="img-header-restaurant_content">
+               <h1>Restaurant</h1>
+              </div>
+           </div> 
+           
+           <!-- Header -->  
+           <!-- Navigation -->
+           <header class="header">
+                 <div class="nav-container">
+                     <nav class="nav-checkbox">
+                         <a href="index.html" class="nav-logo"><i class="fas fa-hotel fa-2x"></i>Hotel</a>
+                         <a href="#hamburger-menu" class="hamburger"><i class="fas fa-bars"></i></a>
+                         <ul class="tab-content">
+                             <li><a href="index.html">Home</a></li>
+                             <li><a href="acoommodation.html">Acoommodation</a></li>
+                             <li><a href="pool.html">Pool</a></li>
+                             <li><a class="active" href="restaurant.html">Resturant</a></li>
+                             <li><a href="contact-us.html">Contact Us</a></li>
+                         </ul>
+                     </nav>
+                 </div>
+            </header>  
+              
+            <!-- hamburger navigation -->
+            <div id="hamburger-menu" class="hamburger-menu">
+               <a href="#reservation" class="close-navigation"><i class="fas fa-times"></i></a>
+               <div class="hamburger-menu_content">
+                   <nav class="hamburger-navigation">
+                       <ul class="hamburger-ul">
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="acoommodation.html">Acoommodation</a></li>
+                           <li><a href="pool.html">Pool</a></li>
+                           <li><a class="active" href="restaurant.html">Resturant</a></li>
+                           <li><a href="contact-us.html">Contact Us</a></li>
+                       </ul>
+                   </nav>
+               </div>  
+            </div>  
+            
+            <!-- logo overlay -->
+            <div class="logo-overlay">
+                <a href="#"><i class="fas fa-hotel"></i></a>
+            </div>
+            
+            <!-- menu overlay -->
+            <div class="menu-overlay">
+                <div class="menu-overlay_content">
+                    <a href="#hamburger-menu" class="menu-overlay_hamburger"><i class="fas fa-bars"></i></a>
+                </div>
+            </div>
+            
+            <!-- section reservation -->
+            <section id="reservation">
+               <h1>Book NOW</h1>
+                <form class="form-reservation">
+                    <input type="text" id="form-name" required placeholder="Name">
+                    <input type="email" id="form-email" required placeholder="Email">
+                    <div id="adults">
+                        <label>Adults</label>
+                        <select required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div id="children">
+                       <label>Children</label>
+                        <select required>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div id="type-of-room">
+                            <label>Type Of Room:</label>
+                            <select required>
+                                <option value="Room">Rooom</option>
+                                <option value="Apartment">Apartment</option>
+                            </select>
+                        </div>
+                        <div id="rooms">
+                            <label>Rooms</label>
+                            <select required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div id="check-in">
+                            <label>Check In</label>
+                            <input type="date" required placeholder="Check In">
+                        </div>
+                        <div id="check-out">
+                           <label>Check Out</label>
+                            <input type="date" required placeholder="Check Out">
+                        </div>
+                        <div id="button-form">
+                           <button type="submit" id="btn-submit"><b>Book NOW</b></button>
+                        </div>
+                </form>
+            </section>  
+            
+            <!-- section Resturant -->
+            <section id="restaurant">
+                <h1>Enjoy menu of Restaurant</h1>
+                <p>The restaurant at Hotel is open for breakfast, lunch and dinner for hotel guests, and also other visitors.</p>
+                <div class="restaurant-container">
+                    <div class="restaurant-content">
+                        <img src="https://source.unsplash.com/klXhDG8Roj4/800x450">
+                        <div class="restaurant-content_inner">
+                            <h2>What we do in our restaurant</h2>
+                            <p>All food ingredients are handpicked from daily market, we focus on fresh and healthy food for our guests, So you’ll enjoy a real taste. There’ll always be a relaxed atmosphere, friendly service, and delicious food!</p>
+                        </div>
+                    </div>
+                    <div class="restaurant-content">
+                            <img src="https://source.unsplash.com/4UGlx_OXqgs/800x450">
+                            <div class="restaurant-content_inner">
+                                <h2>Food is about enjoying.</h2>
+                                <p>Welcome to our restaurant. Here we try to share our vision for food quality, our mission about customer’s satisfaction and introducing services we provide for each one of you. Making a dining place for you and your friends to spent time in relaxing atmosphere is a primary purpose.</p>
+                            </div>
+                    </div>
+                    <div class="restaurant-content">
+                            <img src="https://source.unsplash.com/X_bbCAYzlTs/800x450">
+                            <div class="restaurant-content_inner">
+                                <ul>
+                                    <li>Breakfast: <span>8:00 am to 10:30 am</span></li>
+                                    <li>Lunch: <span>11:30 am to 2:30 pm</span></li>
+                                    <li>Dinner: <span>6:00 pm to 10:00 pm</span></li>
+                                    <li>Sunday Brunch: <span>11:00 am to 2:30 pm</span></li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- div img-fixed -->
+            <div class="img-fixed">
+               <div class="img-fixed-center">
+                <h1 class="h1-call">Call +999 9999999 999 For Reservation</h1>
+                <a class="img-fixed-contact-us" href="contact-us.html"><span>Contact Us</span></a>
+               </div>
+            </div>
+            
+            <!-- section instagram -->
+            <section id="instagram">
+                <h1>Instagram</h1>
+                <marquee behavior="alternate" onMouseOver="this.stop()" onMouseOut="this.start()">
+                    <img src="https://source.unsplash.com/YC8qqp50BdA/300x250">
+                    <img src="https://source.unsplash.com/Koei_7yYtIo/300x250">
+                    <img src="https://source.unsplash.com/RTrZvGlvlQc/300x250">
+                    <img src="https://source.unsplash.com/1joWGyGgdXY/300x250">
+                    <img src="https://source.unsplash.com/CepDpEiALqM/300x250">
+                    <img src="https://source.unsplash.com/ZAVHbpOn4Jk/300x250">
+                    <img src="https://source.unsplash.com/1NEVlrYE-uU/300x250">
+                </marquee>
+            </section>
+            
+            <!-- footer -->
+            <footer id="footer">
+                <a href="#" class="footer-logo"><i class="fas fa-hotel fa-2x"></i>Hotel</a>
+                <div class="footer-contact-us">
+                    <div class="footer-phone">
+                        <p>Phone:</p>
+                        <p>+999 9999999 999</p>
+                    </div>
+                    <div class="footer-address">
+                        <p>Address:</p>
+                        <p>Main Str, no 23, New York</p>
+                    </div>
+                    <div class="footer-mail">
+                        <p>Mail:</p>
+                        <a href="">info@hotel.com</a>
+                    </div>
+                </div>
+                <p class="p-copyright">Copyright 2019&copy; All rights reserved - Design & Developed by <a href="" class="link-copyright">Gjoko Bulovski</a></p>
+            </footer>
+
+       </section>
+       
+   </main>
+   
+    <script src="index.js"></script>
+</body>
+</html>
